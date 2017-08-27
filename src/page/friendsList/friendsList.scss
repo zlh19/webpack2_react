@@ -1,0 +1,33 @@
+@import "../../public/css/mixin";
+
+.main{}
+
+.page-selected{background:#fff;}
+
+.m_list{font-size:0;padding:0 4% 100rem/$size 4%}
+.m_list li{float:left;width:330rem/$size;margin:29rem/$size 0 29rem/$size 0;}
+.m_list li:nth-child(2n){float:right;}
+.m_list .p_pic_wrap{height:330rem/$size;overflow:hidden;background-position:center center;background-size:cover;background-repeat:no-repeat;}
+.m_list .p_title{color: #262628;font-size:26rem/$size;height:64rem/$size;line-height:32rem/$size;margin-top:19rem/$size;
+word-break: break-all;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;}
+
+/*.m_list .p_pic_wrap[lazy=loading] {
+   		background-image:url('../../public/imgs/load_logo.png');
+  }*/
+/*计算*/
+.m_list .p_infor{height:46rem/$size;line-height:46rem/$size;position:relative;margin-top:27rem/$size;}
+.m_list .u_user{font-size:0;}
+.m_list .u_user i,.m_list .u_user span{display:inline-block;vertical-align:middle;}
+.m_list .u_user i{width:46rem/$size;height:46rem/$size;border-radius:50%;overflow:hidden;background-position:center center;background-size:cover;background-repeat:no-repeat;}
+.m_list .u_user span{color:#888;font-size:20rem/$size;padding-left:16rem/$size;}
+
+.m_list .u_zang{font-size:0;position:absolute;right:8px;top:0;}
+.m_list .u_zang i,.m_list .u_zang span{display:inline-block;vertical-align:middle;}
+.m_list .u_zang i{width:20rem/$size;height:19rem/$size;background-image:url(./imgs/zang.png);background-position:center center;background-size:cover;background-repeat:no-repeat;}
+.m_list .u_zang span{font-size:20rem/$size;color:#888;padding-left:14rem/$size;}
+.m_list .u_zang.current i{background-image:url(./imgs/zang_now.png);}
