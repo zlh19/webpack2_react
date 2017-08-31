@@ -157,10 +157,3 @@ export default class freeBicycle extends Component{
     )
   }
 }
-
-
- // <modal :visible="showModal" @cancel="showModal=false" @ok="tapOutTrainFree">
-        //   <div slot="body">
-        //     你这次训练时间太短了，无法保存。你真的尽力了吗？
-        //   </div>
-        // </modal>

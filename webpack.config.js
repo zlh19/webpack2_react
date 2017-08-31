@@ -11,7 +11,7 @@ var buildPath=path.resolve(__dirname,'build')
 
 var plugins = [
   //压缩js 
-  new webpack.optimize.UglifyJsPlugin(),
+  // new webpack.optimize.UglifyJsPlugin(),
   //提公用js到common.js文件中
   new webpack.optimize.CommonsChunkPlugin({
     name:'common'

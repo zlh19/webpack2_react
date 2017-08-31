@@ -24,6 +24,7 @@ import trainClass from './page/trainClass/trainClass.js'
 import friendsList from './page/friendsList/friendsList.js'
 import trainBicycle from './page/trainBicycle/trainBicycle.js'
 import freeBicycle from './page/freeBicycle/freeBicycle.js'
+import login from './page/login/login.js'
 
 // 配置路由
 render((
@@ -34,6 +35,7 @@ render((
           <Route path='/friendsList' component={friendsList} />
           <Route path='/trainBicycle' component={trainBicycle} />
           <Route path='/freeBicycle' component={freeBicycle} />
+          <Route path='/login' component={login} />
     	</div>
     </HashRouter>
 ), document.getElementById('app'));
