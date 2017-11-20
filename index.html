@@ -7,10 +7,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>react</title>
 <link rel="stylesheet" href="./build/style.css">
+<script type="text/javascript" src="./src/webp/webp.min.js"></script>
 </head>
 <body>
     <div id="app"></div>
     <script src="./build/common.js"></script>
     <script src="./build/build.js"></script>
+
+    
+    <!-- <img src="test.webp">
+    <div id="main"></div>
+    <script>
+        function checkWebp() {
+            try {
+                return (document.createElement('canvas').toDataURL('image/webp').indexOf('data:image/webp') == 0);
+            } catch (err) {
+                return false;
+            }
+        }
+        if (checkWebp()) {
+            document.getElementById('main').innerHTML = "支持"
+        } else {
+            document.getElementById('main').innerHTML = "不支持"
+        }
+
+    </script> -->
 </body>
 </html>

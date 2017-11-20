@@ -1,0 +1,48 @@
+@import "../../public/css/mixin";
+.tab-main{
+  width:90%;
+  .tab-title{
+  height:150rem/$size;
+  line-height:150rem/$size;
+  text-align:center;
+  background:#eee;
+  border-bottom:1px solid #999;
+  ul{
+    display:block;
+    display:flex;
+  }
+  li{
+    flex:1
+  }
+  .current{
+    background:#ddd
+  }
+}
+
+.tab-content{
+  overflow:hidden;
+  padding:30rem/$size;
+  background:#eee;
+  display:none;
+ &.current{
+  display:block;
+ } 
+}
+}
+
+
+
+.dialog-message{
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  .dialog-content{
+     flex:1
+  }
+}
+

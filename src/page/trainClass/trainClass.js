@@ -58,7 +58,6 @@ export default class trainClass extends Component {
               </div>
               <Nav state="0"></Nav>
             </div>
-
         );
     }
 }

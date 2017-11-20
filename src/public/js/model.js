@@ -51,9 +51,30 @@ const switchLocalData= function (source) {
     return query;
 }
 
+//   const obj={
+    //       name:function(){
+    //           return 'name'
+    //       },
+    //       age: function () {
+    //           return 'age'
+    //       }
+    //       value: 1,
+    //   }
+    //   console.log(this.test(obj, (items) =>  typeof items === 'function' ))
+const test=function(obj, fn){
+    return Object.keys(obj).reduce((result, key) => {
+        console.log(result, key, )
+        if (fn(obj[key])) {
+            result[key] = obj[key]
+        }
+        return result
+    }, {})
+}
+
 export {
     remToPxFun,
     setWechatTitleFun,
-    switchLocalData
+    switchLocalData,
+    test
 }
 

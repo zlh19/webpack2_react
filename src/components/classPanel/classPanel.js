@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './classPanel.scss';
-
 export default class ClassPanel extends Component{
   changeTimer(timer){
     return parseInt(timer/60)

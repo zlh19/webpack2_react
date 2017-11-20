@@ -29,17 +29,25 @@
     "file-loader": "^0.11.2",
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.6",
+    "source-map-loader": "^0.2.3",
     "style-loader": "^0.18.2",
+    "ts-loader": "^3.1.1",
     "url-loader": "^0.5.9",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
+    "@ali/rax-picture": "^2.0.0",
     "axios": "^0.16.2",
     "moment": "^2.18.1",
+    "prop-types": "^15.6.0",
+    "rax-picture": "^0.4.20",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
     "react-router": "^4.1.2",
-    "react-router-dom": "^4.1.2"
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.7.2",
+    "rxjs": "^5.5.2"
   }
 }

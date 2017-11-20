@@ -87,9 +87,9 @@ export default class login extends Component {
       display:`${this.state.passwordErrorData?'block':'none'}`
     }
 
-    if(this.state.loginSuccess){
-      return <Redirect to='/trainClass' push />
-    }
+    // if(this.state.loginSuccess){
+    //   return <Redirect to='/trainClass' push />
+    // }
     return(
       <div className="login-main">
         <div className="p-title">登录</div>
