@@ -1,15 +1,15 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+let path = require('path');
+let webpack = require('webpack');
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 
 //入口文件
-var enterPath=path.resolve(__dirname,'src/main.js');
+let enterPath=path.resolve(__dirname,'src/main.tsx');
 //出口文件
-var buildPath=path.resolve(__dirname,'build')
+let buildPath=path.resolve(__dirname,'build')
 
 
-var plugins = [
+let plugins = [
   //压缩js 
   // new webpack.optimize.UglifyJsPlugin(),
   //提公用js到common.js文件中
@@ -38,16 +38,14 @@ module.exports = {
   output: {
     path: buildPath,
     filename: '[name].js',
-    // 指向异步加载的路径
     publicPath : 'build/',
-    // 非主文件的命名规则
     chunkFilename: '[id].build.js?[chunkhash]'
   },
   module:{
     rules:[
       {
-        test: /\.vue$/,
-        use: 'vue-loader',
+        test: /\.tsx$/,
+        use: 'ts-loader',
       },
       {
         test: /\.scss$/,
@@ -64,20 +62,16 @@ module.exports = {
         })
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use:{
-          loader: 'babel-loader',
-          options: {
-            presets: ['es2015', 'stage-0', 'react']
-          }
-        }
-      },
-      {
         test: /\.(png|jpg|ttf)$/,
         use: 'url-loader?limit=8000&name=imgs/[name].[hash].[ext]'
       }
     ]
+  },
+  resolve: {
+    modules: [
+      'node_modules'
+    ],
+    extensions: ['.tsx', '.js', '.ts', ' ']
   },
   plugins: plugins
 };
