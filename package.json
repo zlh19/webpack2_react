@@ -37,7 +37,6 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "@ali/rax-picture": "^2.0.0",
     "@types/react": "^16.0.25",
     "@types/react-dom": "^16.0.3",
     "@types/react-redux": "^5.0.13",
