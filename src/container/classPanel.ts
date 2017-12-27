@@ -16,13 +16,13 @@ const getClassType=(data)=>{
 }
 function mapDispatchToProps(dispatch) {
   return {
-    getLesson:()=>{
-      axios
-        .get('/json/friendsList.json')
-        .then((res) => {
-          return dispatch(getClassType(res.data.list))
-        })
-    }
+    // getLesson:()=>{
+    //   axios
+    //     .get('/json/friendsList.json')
+    //     .then((res) => {
+    //       dispatch(getClassType(res.data.list))
+    //     })
+    // }
   }
 }
 

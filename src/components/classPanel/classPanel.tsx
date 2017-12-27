@@ -4,7 +4,7 @@ import './classPanel.scss';
 
 interface Props{
   lesson:Array<any>,
-  getLesson:any
+  // getLesson:any
 }
 
 class ClassPanel extends Component<Props,any> {
@@ -12,10 +12,10 @@ class ClassPanel extends Component<Props,any> {
     const timers = (timer / 60).toString();
     return parseInt(timers)
   }
-  componentDidMount() {
-    const { getLesson } = this.props;
-    getLesson()
-  }
+  // componentDidMount() {
+  //   const { getLesson } = this.props;
+  //   getLesson()
+  // }
   render() {
     const { lesson=[] }=this.props;
       return (

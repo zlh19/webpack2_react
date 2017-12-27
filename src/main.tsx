@@ -11,7 +11,7 @@ import { remToPxFun} from './public/js/model'
 import './public/css/reset.scss'
 
 import { TestPage } from './page/testPage/testPage'
-
+import { IndexView as TrainClass} from './container/trainClass'
 import appReducer from './reducer'
 const store = createStore(
     appReducer,
@@ -26,8 +26,9 @@ render((
     <Provider store={store}>
         <HashRouter>
             <div>
-                <Route exact path="/" component={TestPage} />
+                <Route exact path="/" component={TrainClass} />
                 <Route path='/testPage' component={TestPage} />
+                <Route path='/trainClass' component={TrainClass} />
             </div>
         </HashRouter>
     </Provider>
